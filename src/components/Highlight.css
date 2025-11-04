@@ -73,3 +73,24 @@
   border-radius: 10px;
   transition: opacity 0.4s ease-in-out;
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .highlight-title {
+    font-size: 28px;
+  }
+
+  .highlight-image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 600px) {
+  .highlight-image-container {
+    width: 94%;
+  }
+
+  .highlight-image {
+    height: 240px;
+  }
+}

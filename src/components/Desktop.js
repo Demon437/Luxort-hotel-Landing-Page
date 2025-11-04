@@ -1,6 +1,5 @@
 import React from "react";
 import "./Desktop.css";
-import LuxortLogo from "../Images/7a16185ae094dd26b67ee8827e0f0de4.jpg"; // <-- your local logo path
 
 const Desktop = () => {
     return (

@@ -52,3 +52,81 @@
 .login-btn:hover {
   text-decoration: underline;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 1rem 4%;
+  }
+
+  .nav-left a {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-right {
+    gap: 1rem;
+  }
+
+  .nav-center h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .nav-left {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 6px;
+  }
+
+  .nav-right {
+    order: 2;
+    width: auto;
+  }
+
+  .nav-center {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .login-btn {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border: 1px solid #1c2a25;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left {
+    display: none;
+  }
+
+  .nav-center h2 {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+  }
+
+  .nav-logo {
+    width: 18px;
+    height: 18px;
+  }
+
+  .lang {
+    display: none;
+  }
+}

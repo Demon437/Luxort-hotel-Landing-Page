@@ -97,3 +97,34 @@
 .card-info button:hover span {
   transform: translateX(3px);
 }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .gallery-card {
+    flex: 0 0 33.33%; /* 3 cards visible */
+  }
+
+  .card-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery-card {
+    flex: 0 0 50%; /* 2 cards visible */
+  }
+
+  .card-image {
+    height: 170px;
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery-card {
+    flex: 0 0 100%; /* 1 card visible */
+  }
+
+  .card-image {
+    height: 200px;
+  }
+}

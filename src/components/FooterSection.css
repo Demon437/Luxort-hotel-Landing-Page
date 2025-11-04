@@ -59,3 +59,26 @@
     transform: translateX(-50%);
   }
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .logo-track {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .partners-section {
+    padding: 40px 0;
+  }
+
+  .logo-item {
+    min-width: 120px;
+    font-size: 12px;
+  }
+
+  .logo-item img {
+    width: 32px;
+    height: 32px;
+  }
+}

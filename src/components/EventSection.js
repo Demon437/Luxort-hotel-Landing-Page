@@ -44,7 +44,7 @@ const EventSection = () => {
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
-          nextSlide();
+          setActiveIndex((idx) => (idx + 1 >= events.length - 2 ? 0 : idx + 1));
           return 0;
         }
         return prev + 1;
@@ -52,7 +52,7 @@ const EventSection = () => {
     }, 50); // 5 seconds per slide roughly
 
     return () => clearInterval(interval);
-  }, [activeIndex]);
+  }, [events.length]);
 
   const nextSlide = () => {
     setActiveIndex((prev) =>

@@ -83,6 +83,17 @@
   }
 
   /* 📱 Responsive */
+  @media (max-width: 1200px) {
+    .hero-left h1 {
+      font-size: 4rem;
+    }
+
+    .hero-right p {
+      margin-top: 80px;
+      max-width: 90%;
+    }
+  }
+
   @media (max-width: 900px) {
     .hero {
       flex-direction: column;
@@ -100,11 +111,39 @@
     }
 
     .hero-right p {
-      margin: 0 auto 2rem;
+      margin: 0 auto 1.5rem;
+      max-width: 100%;
+      margin-top: 0;
     }
 
     .hero-buttons {
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      padding: 2.2rem 5%;
+    }
+
+    .hero-left h1 {
+      font-size: 2.2rem;
+      line-height: 1.15;
+    }
+
+    .hero-right p {
+      font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      max-width: 360px;
     }
   }
 

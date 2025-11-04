@@ -49,3 +49,26 @@
 .newsletter-button:hover {
   background-color: #005c42;
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .newsletter-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .newsletter-section {
+    padding: 70px 16px;
+  }
+
+  .newsletter-title {
+    font-size: 28px;
+  }
+
+  .newsletter-input,
+  .newsletter-button {
+    width: 100%;
+    max-width: 420px;
+  }
+}

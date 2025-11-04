@@ -7,9 +7,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-left">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">EVENTS</a>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#events">EVENTS</a>
             </div>
             <div className="nav-center">
                <img src={logo} alt="logo" className="nav-logo" />

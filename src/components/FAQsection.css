@@ -87,5 +87,30 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive */
+@media (max-width: 900px) {
+  .faq-list {
+    width: 86%;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-list {
+    width: 94%;
+  }
+
+  .faq-question {
+    font-size: 13px;
+  }
+
+  .faq-answer p {
+    font-size: 12px;
+  }
+}
+
 
 
