@@ -1,0 +1,120 @@
+  /* 🌿 Hero Section Container */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 8%;
+    background-color: #f6f3ea;
+    color: #1c2a25;
+    flex-wrap: wrap;
+  }
+
+  /* 🖋️ Left Side Text */
+  .hero-left {
+    flex: 1;
+    text-align: left; /* left side main heading */
+  }
+
+  .hero-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #0d2217;
+    letter-spacing: 1px;
+  }
+
+  .hero-left .highlight {
+    display: inline-block;
+    color: #1c2a25;
+  }
+
+  /* 🖋️ Right Side Text & Buttons */
+  .hero-right {
+    flex: 0.8;
+    text-align: left; /* move text + buttons to right */
+  }
+
+  .hero-right p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #333;
+    max-width: 80%;
+    margin-left: auto; /* push text towards right */
+    margin-top: 170px;
+  }
+
+  /* 🎟️ Buttons Section */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+    
+  }
+
+  .btn-primary {
+    background-color: #0d2217;
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+  }
+
+  .btn-secondary {
+    background-color: white;
+    color: #0d2217;
+    border: 1px solid #0d2217;
+    padding: 0.9rem 1.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    opacity: 0.85;
+  }
+
+  /* 📱 Responsive */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 3rem 5%;
+    }
+
+    .hero-left h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .hero-right {
+      text-align: center;
+    }
+
+    .hero-right p {
+      margin: 0 auto 2rem;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  

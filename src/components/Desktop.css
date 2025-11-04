@@ -1,0 +1,113 @@
+.footer {
+  background-color: #0b1d17;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* TOP SECTION */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* BRAND SECTION */
+.footer-brand {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img.luxort-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.footer-logo h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* DESCRIPTION */
+.footer-description {
+  max-width: 380px;
+  font-size: 13px;
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+/* QUICK LINKS */
+.footer-links,
+.footer-social {
+  flex: 0.5;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  color: #b3b3b3;
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover,
+.footer-social li:hover {
+  color: #ffffff;
+}
+
+/* BOTTOM SECTION */
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom hr {
+  border: 0.5px solid #2b3a32;
+  margin-bottom: 10px;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.footer-links-inline span {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links-inline span:hover {
+  color: #ffffff;
+}
