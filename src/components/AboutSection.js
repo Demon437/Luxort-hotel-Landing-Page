@@ -11,21 +11,22 @@ const AboutSection = () => {
       mainUrl:
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
       sideUrl:
-        "https://images.unsplash.com/photo-1598300056483-9a9999f2596e?auto=format&fit=crop&w=800&q=80",
+        "https://plus.unsplash.com/premium_photo-1724707432344-4e8dff69297d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
     },
+
     {
       id: "02",
       title: "LUXURY LOUNGE",
       mainUrl:
         "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
       sideUrl:
-        "https://images.unsplash.com/photo-1600607687644-a2eb23b9f96f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1585548807335-e0bfa52ac220?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
     },
     {
       id: "03",
       title: "DINING EXPERIENCE",
       mainUrl:
-        "https://images.unsplash.com/photo-1616627456764-7e3c2c1e89cb?auto=format&fit=crop&w=1600&q=80",
+        "https://plus.unsplash.com/premium_photo-1661371792226-767cb88af3f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169",
       sideUrl:
         "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
     },
@@ -33,9 +34,9 @@ const AboutSection = () => {
       id: "04",
       title: "POOL SIDE RELAX",
       mainUrl:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+        "https://plus.unsplash.com/premium_photo-1678288606244-71ca32f243f9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
       sideUrl:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1761744401744-68498d67b73f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
     },
   ];
 
@@ -97,35 +98,36 @@ const AboutSection = () => {
         </div>
 
         {/* IMAGE CARDS */}
-        <div className="about-images">
-          <div className="main-image-container">
-            <div
-              className="main-image fade"
-              style={{ backgroundImage: `url(${slides[current].mainUrl})` }}
-            ></div>
+       <div className="about-images">
+  <div className="main-image-container">
+    <div
+      className="main-image fade"
+      style={{ backgroundImage: `url(${slides[current].mainUrl})` }}
+    ></div>
 
-            <div className="image-footer">
-              <div className="progress-bar">
-                <div className="progress-fill"></div>
-              </div>
-              <div className="image-info">
-                <span>{slides[current].id}</span>
-                <p>{slides[current].title}</p>
-                <button onClick={nextSlide}>
-                  NEXT <span>→</span>
-                </button>
-              </div>
-            </div>
-          </div>
+    <div className="image-footer">
+      <div className="progress-bar">
+        <div className="progress-fill"></div>
+      </div>
+      <div className="image-info">
+        <span>{slides[current].id}</span>
+        <p>{slides[current].title}</p>
+        <button onClick={nextSlide}>
+          NEXT <span>→</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
-          <div
-            className="side-image"
-            style={{
-              backgroundImage: `url(${slides[(current + 1) % slides.length].sideUrl
-                })`,
-            }}
-          ></div>
-        </div>
+  {/* 👇 FIXED — Side image will now match the same current slide */}
+  <div
+    className="side-image"
+    style={{
+      backgroundImage: `url(${slides[current].sideUrl})`,
+    }}
+  ></div>
+</div>
+
 
         {/* SLIDER BAR */}
         <div className="slider-bar">
